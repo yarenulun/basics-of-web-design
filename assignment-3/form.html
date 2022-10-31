@@ -1,0 +1,123 @@
+<html>
+    <head>
+    <title>iş görüşmesi</title>
+    <meta charset="utf-8">   
+    </head>
+    <body>
+    <form  method="get" >
+    <table border="5" Align="center">
+
+<tr>
+     
+     <td Align="center" colspan="2">İŞ BAŞVURU FORMU</td>
+</tr>
+
+
+    <tr>
+    <td>Adınız :</td>
+    <td><input type="text" name="ad" id="ad" required placeholder="Lütfen Adınızı Girin"></td>
+    </tr>
+    <tr>
+    <td>Soyadınız :</td>
+    <td><input type="text"name="soyad"id="soyad" required placeholder="Lütfen Soyadınızı Girin"></td>
+    </tr>
+    
+    
+        <tr>
+        <td>Cinsiyetiniz:</td>
+        <td><input type="radio"name="cinsiyet" id="cinsiyet1"  value="kadın">
+        <label for="cinsiyet1">Kadın</label>
+        <input type="radio" name="cinsiyet" id="cinsiyet2" value="erkek">
+        <label for="cinsiyet2">Erkek</label>
+        </td>
+        </tr>
+
+        <tr>   
+        <td>Doğum Tarihiniz:</td>
+        <td><input type="date" name="dtarihi" id="tarih" required></td>
+        </tr>
+
+        <tr>
+          <td>Eğitim Düzeyi:</td>
+          <br>
+          <td>
+          <select name="egitim">
+        <option value="ilkokul">ilkokul</option>
+          <option value="lise">Lise</option> 
+          <option value="onlisans">Ön Lisans</option>
+          <option value="lisans">Lisans</option>
+          <option value="y.lisans">Y.Lisans</option>
+          <option value="doktora">Doktora</option>
+          </select>
+          </td>
+          </tr>
+
+
+        <tr>
+            <td>Bildiğiniz Yabancı Diller:</td>
+            <br>
+            <td>
+            
+            <input type="checkbox" name="en[]" id="dil1">
+            <label for="dil1">İngilizce</label>
+       <br>
+            <input type="checkbox" name="de[]"  id="dil2">
+            <label for="dil2">Almanca</label>
+       <br>
+            <input type="checkbox" name="fr[]"  id="dil3">
+            <label for="dil3">Fransızca</label>
+       <br>
+            <input type="checkbox" name="ing[]"  id="dil4">
+            <label for="dil4">İspanyolca</label>
+       <br>
+            <input type="checkbox" name="es[]"  id="dil5">
+            <label for="dil5">Çince</label>
+       <br>
+            <input type="checkbox" name="ru[]"  id="dil6">
+            <label for="dil6">Rusça</label>
+       
+            </td>
+            <tr>
+
+        <tr>
+       <td>Kısaca Özgeçmişiniz:</td>
+         <br>
+         <td><textarea cols="40" rows="4"></textarea ></td>
+       </tr
+     
+       <tr>
+          <td>Adresiniz:</td>
+            <br>
+            <td><textarea cols="40" rows="4"></textarea ></td>
+          </tr
+   
+    <tr>
+    <td>Size Ulaşabileceğimiz Mail Adresi:</td>
+    <td><input type="email" name="mail" id="mail" required placeholder="örnek@gmail.com"></td>
+    </tr>
+    <tr>
+        <td>Telefon Numarası:</td>
+      <td><input type="number" placeholder="(555)(555 55 55)" required></td>
+    </tr>
+    <tr>
+
+        <td>Fotoğrafınızı Ekleyiniz:</td>
+        <td><label for="myfile"></label>
+            <input type="file" id="myfile" name="myfile" > </td>
+
+      </tr>
+
+     
+    <tr>
+    <td Align="center"  colspan="2">
+    <input type="submit" name="kaydet" id="kaydet" value="KAYDET">
+    <input type="reset" name="sil" id="sil" value="TEMİZLE">    
+    </td>
+    </tr>        
+        </table>    
+     
+    </form>
+        
+    </body>
+     
+    </html>
